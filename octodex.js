@@ -19,13 +19,13 @@ var ImageToAscii = require ("image-to-ascii")
   , AsciiFrames = require ("ascii-frames")
   , Yargs = require('yargs').usage(HELP)
   , argv = Yargs.argv
-  , octocatName = argv.o.toLowerCase()
+  , octocatName = (argv.o || "").toLowerCase()
   , prefix = "https://octodex.github.com/images/"
   ;
 
 // show version
 if (argv.v || argv.version) {
-    return console.log("Bible.js v" + require ("./package").version);
+    return console.log("octodex v" + require ("./package").version);
 }
 
 /**
