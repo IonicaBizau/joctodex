@@ -40,6 +40,11 @@ function getImagePath (name, callback) {
       , complete = 0
       ;
 
+    // the string begins with https or http
+    if (/^https?:\/\//.test(name) || name[0] === "/") {
+        return callback (null, name);
+    }
+
     for (var i = 0; i < possibleExtensions.length; ++i) {
         (function (cEx) {
             var path = prefix + name + "." + cEx;
@@ -83,7 +88,7 @@ getImagePath (octocatName, function (err, octo) {
         return console.log(err);
     }
 
-    var frameCount = 10;
+    var frameCount = 20;
     for (var i = 0; i < frameCount; ++i) {
         (function (idx) {
 
@@ -97,6 +102,9 @@ getImagePath (octocatName, function (err, octo) {
             });
 
             octocat.convert(octo, function(err, converted) {
+                if (err) {
+                    return console.log(err);
+                }
                 frames[idx] = converted;
                 if (frames.length === frameCount) {
 
@@ -108,13 +116,13 @@ getImagePath (octocatName, function (err, octo) {
 
                     // and start animation
                     animation.startAnimation({
-                        frameDelay: 500
+                        frameDelay: 200
                     });
 
                     setTimeout (function () {
                         console.log(frames[frames.length - 1]);
                         process.exit();
-                    }, 500 * (frames.length + 1));
+                    }, 200 * (frames.length + 1));
                 }
             });
         })(i)
