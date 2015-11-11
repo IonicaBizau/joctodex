@@ -1,18 +1,26 @@
 {
   "name": "octodex",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Octocats in terminal!",
   "main": "octodex.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ionică Bizău <bizauionica@gmail.com>",
-  "license": "MIT",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "license": "KINDLY",
   "dependencies": {
     "ascii-frames": "~0.1.2",
     "image-to-ascii": "~0.1.1",
     "request": "~2.34.0",
     "yargs": "~1.2.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IonicaBizau/joctodex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/joctodex/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/joctodex#readme"
 }
