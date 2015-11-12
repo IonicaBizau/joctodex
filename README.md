@@ -1,11 +1,11 @@
-# octodex [![Support this project][donate-now]][paypal-donations]
+# joctodex [![Support this project][donate-now]][paypal-donations]
 
 Octocats in terminal!
 
 ## Installation
 
 ```sh
-$ npm i octodex
+$ npm i joctodex
 ```
 
 ## Documentation
