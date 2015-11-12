@@ -1,6 +1,6 @@
 {
   "name": "joctodex",
-  "version": "1.2.0",
+  "version": "1.0.0",
   "description": "Octocats in terminal!",
   "main": "octodex.js",
   "scripts": {
