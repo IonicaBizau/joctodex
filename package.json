@@ -1,13 +1,13 @@
 {
   "name": "joctodex",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Octocats in terminal!",
   "main": "octodex.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
-  "license": "KINDLY",
+  "license": "MIT",
   "dependencies": {
     "ascii-frames": "~0.1.2",
     "image-to-ascii": "~0.1.1",
