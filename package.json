@@ -1,6 +1,6 @@
 {
   "name": "joctodex",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Octocats in terminal!",
   "main": "octodex.js",
   "scripts": {
@@ -22,5 +22,16 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/joctodex/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/joctodex#readme"
+  "homepage": "https://github.com/IonicaBizau/joctodex#readme",
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }
