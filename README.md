@@ -10,7 +10,11 @@
 ## :cloud: Installation
 
 ```sh
-$ npm i --save joctodex
+# Using npm
+npm install --save joctodex
+
+# Using yarn
+yarn add joctodex
 ```
 
 
